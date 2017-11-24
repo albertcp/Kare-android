@@ -7,35 +7,62 @@
     android:layout_height="match_parent"
     tools:context="net.nedteam.nedid.MainActivity">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/title_home"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navigation" />
+        <Button
+            android:id="@+id/buttonPablo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pablo"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="93dp" />
 
-    <Button
-        android:id="@+id/buttonNEDID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEDid"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="48dp" />
+        <Button
+            android:id="@+id/buttonNEDID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KareID"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/buttonElvira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elvira" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonTarea1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarea 1" />
+
+        <Button
+            android:id="@+id/buttonTarea2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarea 2" />
+
+        <Button
+            android:id="@+id/buttonAtras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atras" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="100dp"
+            android:drawableTop="@drawable/ic_mic_black_24dp"
+            android:text="Grabar Acción" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
